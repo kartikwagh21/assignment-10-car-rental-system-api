@@ -401,3 +401,7 @@ The smoke test suite verifies:
 | `403 Admin access required` | User does not have `admin` role in `app_metadata`. | Run `npm run create-admin -- <email> <password>` and log in with that account. |
 | `400 Bad Request on past dates` | `ALLOW_PAST_DATES` is set to `false`. | Set `ALLOW_PAST_DATES=true` in `.env` or Render environment settings. |
 | `Render Free Tier Cold Starts` | Render sleeps free instances after 15 minutes of inactivity. | Allow 30–50 seconds for the initial wake-up ping to `/health`. |
+
+
+
+DEPLOYMENT LINK: https://assignment-10-car-rental-system-api-ch2o.onrender.com/
