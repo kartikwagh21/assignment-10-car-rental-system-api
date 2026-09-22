@@ -1,3 +1,11 @@
+try {
+  if (typeof globalThis.WebSocket === 'undefined') {
+    globalThis.WebSocket = require('ws');
+  }
+} catch (e) {
+  // WebSocket polyfill fallback
+}
+
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');

@@ -1,3 +1,11 @@
+try {
+  if (typeof globalThis.WebSocket === 'undefined') {
+    globalThis.WebSocket = require('ws');
+  }
+} catch (e) {
+  // WebSocket polyfill fallback
+}
+
 const { createClient } = require('@supabase/supabase-js');
 require('dotenv').config();
 
